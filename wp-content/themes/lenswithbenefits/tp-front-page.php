@@ -9,21 +9,34 @@
 
 get_header(); ?>
 
-
 <?php
 
-// Page Getters/Setters
-$sliderPostArgs = array(
-	'posts_per_page'   => 5,
-	'order'            => 'DESC',
-	'post_type'        => 'post',
-	'post_status'      => 'publish',
-);
-
-$slider_posts = get_posts( $args );
+	// Page Getters/Setters
+	$sliderPostArgs = array(
+		'posts_per_page'   => 5,
+		'order'            => 'ASC',
+		'post_type'        => 'cc_custom_slider',
+	);
+	
+	$slider_posts = get_posts( $sliderPostArgs );
 
 ?>
 
-SEXY NEW HOMEPAGEEEEEE BAYEEE BAYEEE
+
+<div class="introduction-slider">
+	<div class="owl-carousel">
+		<?php foreach($slider_posts as $item) { ?>
+
+			<?php if(get_field('cc_slider_video_url', $item->ID)) { ?>
+				<a class="owl-video" href="<?php echo get_field('cc_slider_video_url', $item->ID); ?>"></a>
+			<?php } else { ?>
+				<div class="item">
+					<div class="title"><?php echo $item->post_title; ?></div>
+				</div>
+			<?php }  //endif ?> 
+
+		<?php } //end foreach?>
+	</div>
+</div>
 
 <?php get_footer();

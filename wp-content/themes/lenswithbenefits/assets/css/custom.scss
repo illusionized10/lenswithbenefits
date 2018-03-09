@@ -1,0 +1,89 @@
+body {
+
+	font-size:14px;
+	font-family: 'Raleway', sans-serif;
+
+	a {
+		transition: all 0.5s ease;
+		&:hover {
+			text-decoration:none;
+		}
+		&:focus {
+			text-decoration:none;
+		}
+	}
+
+	p {
+		padding:0;
+		margin:0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "marydale" , sans-serif;;
+		padding: 0 ;
+		margin: 0 ;
+	}
+
+	ul {
+		padding:0;
+		margin:0;
+		li {
+			padding:0;
+			margin:0;
+		}
+	}
+
+	header {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:50;
+		background:rgba(0,0,0,0.4);
+		font-family: "marydale" , sans-serif;
+		text-align:center;
+		img {
+			&.logo {
+				height:auto;
+				max-width:130px;
+				margin:0 auto;
+				text-align:center;
+			}	
+		}
+		ul {
+			
+			li {
+				display:inline-block;
+				a {
+					display:block;
+					padding-top:55px;
+					padding-bottom:55px;
+					font-size:18px;
+					text-transform:uppercase;
+					color:#ffffff;
+					padding-left:30px;
+					padding-right:30px;
+				}
+			}
+		}
+	}
+
+	// Homepage Styles
+	&.page-template-tp-front-page {
+
+		.introduction-slider {
+			z-index:10;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			.owl-item, .owl-video-wrapper {
+				min-height:90vh;
+				.item {
+
+				}
+			}
+		}
+
+	}
+}

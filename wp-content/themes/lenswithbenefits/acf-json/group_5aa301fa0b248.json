@@ -1,7 +1,28 @@
 {
     "key": "group_5aa301fa0b248",
     "title": "Custom Slider Fields",
-    "fields": false,
+    "fields": [
+        {
+            "key": "field_5aa30119117c0",
+            "label": "Video instead of image? Insert URL here:",
+            "name": "cc_slider_video_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
     "location": [
         [
             {
@@ -16,8 +37,8 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520632314
+    "modified": 1520636517
 }

@@ -17,15 +17,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+	<!-- Typekit/Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/wgm5jfv.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,900" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
 <?php
-
-// Getters/Setters
-
-$menuLeftArgs = array( 'menu' => 'left-menu' );
-$menuRightArgs = array( 'menu' => 'right-menu' );
+	// Getters/Setters
+	$menuLeftArgs = array( 'menu' => 'left-menu' );
+	$menuRightArgs = array( 'menu' => 'right-menu' );
 
 ?>
 
@@ -43,7 +45,9 @@ $menuRightArgs = array( 'menu' => 'right-menu' );
 				</div>
 				<div class="col-sm-2">
 					<!-- Logo Here -->
-					
+					<a href="<?php echo get_home_url(); ?>">
+						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo"> 
+					</a>
 				</div>
 				<div class="col-sm-5">
 					<!-- Right Side Menu -->

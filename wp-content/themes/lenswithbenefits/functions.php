@@ -120,20 +120,30 @@ add_action( 'widgets_init', 'lenswithbenefits_widgets_init' );
  * Enqueue scripts and styles.
  */
 function lenswithbenefits_scripts() {
+
+	// Scripts
+	wp_enqueue_script( 'jquery-3.3.1', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js' );
+
+	wp_enqueue_script('popper', get_template_directory_uri(). '/assets/js/popper.min.js' );
+
+	wp_enqueue_script('bootstrap', get_template_directory_uri(). '/assets/js/bootstrap.min.js' );
+
+	wp_enqueue_script('owl-carousel', get_template_directory_uri(). '/assets/js/owl.carousel.min.js' );
+
+	wp_enqueue_script('custom', get_template_directory_uri(). '/assets/js/custom.js' );
+
+	// Styles
 	wp_enqueue_style( 'lenswithbenefits-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'custom-styles', get_template_directory_uri()."/assets/css/bootstrap.css");
+	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri()."/assets/css/bootstrap.css");
+
+	wp_enqueue_style( 'owl-carousel-styles', get_template_directory_uri()."/assets/css/owl.carousel.min.css");
+
+	wp_enqueue_style( 'owl-theme-styles', get_template_directory_uri()."/assets/css/owl.theme.default.min.css");
 
 	wp_enqueue_style( 'custom-styles', get_template_directory_uri()."/assets/css/custom.css");
-
-	wp_enqueue_script( 'lenswithbenefits-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	wp_enqueue_script('jquery', get_template_directory_uri(). '/assets/js/jquery-3.2.1.slim.min.js' );
-
-	wp_enqueue_script('jquery', get_template_directory_uri(). '/assets/js/popper.min.js' );
-
-	wp_enqueue_script('jquery', get_template_directory_uri(). '/assets/js/bootstrap.min.js' );
 }
+
 add_action( 'wp_enqueue_scripts', 'lenswithbenefits_scripts' );
 
 /**
@@ -218,3 +228,5 @@ function cc_create_slider() {
 
 }
 add_action( 'init', 'cc_create_slider', 0 );
+
+show_admin_bar(false);
