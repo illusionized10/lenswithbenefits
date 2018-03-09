@@ -20,39 +20,38 @@
 	<?php wp_head(); ?>
 </head>
 
+<?php
+
+// Getters/Setters
+
+$menuLeftArgs = array( 'menu' => 'left-menu' );
+$menuRightArgs = array( 'menu' => 'right-menu' );
+
+?>
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lenswithbenefits' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$lenswithbenefits_description = get_bloginfo( 'description', 'display' );
-			if ( $lenswithbenefits_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $lenswithbenefits_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lenswithbenefits' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<!-- Left Side Menu -->
+					<?php wp_nav_menu($menuLeftArgs); ?>
+				</div>
+				<div class="col-sm-2">
+					<!-- Logo Here -->
+					
+				</div>
+				<div class="col-sm-5">
+					<!-- Right Side Menu -->
+					<?php wp_nav_menu($menuRightArgs); ?>
+				</div>
+			</div>
+		</div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
