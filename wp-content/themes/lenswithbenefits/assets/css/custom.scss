@@ -35,7 +35,7 @@ body {
 
 	header {
 		position:absolute;
-		top:0;
+		top:10px;
 		left:0;
 		width:100%;
 		z-index:50;
@@ -54,6 +54,33 @@ body {
 			
 			li {
 				display:inline-block;
+				position:relative;
+				background-color:black;
+				z-index:30;
+				.corner {
+				    position: absolute;
+				    background: blue;
+				    width: 20px;
+				    height: 20px;
+				    z-index: 2;
+					&.TL {
+					    top: -10px;
+					    left: -10px
+					}
+					&.TR {
+					    top: -10px;
+					    right: -10px
+					}
+					&.BL {
+					    bottom: -10px;
+					    left: -10px
+					}
+					&.BR {
+					    bottom: -10px;
+					    right: -10px
+					}
+				}
+
 				a {
 					display:block;
 					padding-top:55px;
@@ -63,6 +90,8 @@ body {
 					color:#ffffff;
 					padding-left:30px;
 					padding-right:30px;
+					background-color:black;
+					z-index:30;
 				}
 			}
 		}
