@@ -24,13 +24,19 @@ get_header(); ?>
 		<?php foreach($slider_posts as $item) { ?>
 
 			<?php if(get_field('cc_slider_video_url', $item->ID)) { ?>
-				<div class="item video">
+				<div class="item video" style="background-image:url('<?php echo get_field("cc_video_background_image", $item->ID); ?>');">
 					<div class="content">
-						<a href="<?php echo get_field('cc_slider_video_url', $item->ID); ?>" class="mobx"><i class="fa fa-play"></i><span><?php echo $item->post_title; ?></span></a>
+						<a href="<?php echo get_field('cc_slider_video_url', $item->ID); ?>" class="mobx">
+							<i class="far fa-play-circle"></i>
+						</a>
+					</div>
+					<div class="slide-text">
+						<div class="title"><?php echo $item->post_title; ?></div>
+						<div class="subtitle"><?php echo get_field('cc_slide_subtitle', $item->ID); ?></div> 
 					</div>
 				</div>
 			<?php } else { ?>
-				<div class="item image">
+				<div class="item image" style="">
 					<div class="content">
 						<div class="title"><?php echo $item->post_title; ?></div>
 					</div>

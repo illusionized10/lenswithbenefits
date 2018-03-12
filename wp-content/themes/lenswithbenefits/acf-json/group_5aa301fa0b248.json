@@ -3,6 +3,25 @@
     "title": "Custom Slider Fields",
     "fields": [
         {
+            "key": "field_5aa6fb3507eb0",
+            "label": "Slide Subtitle",
+            "name": "cc_slide_subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5aa30119117c0",
             "label": "Video instead of image? Insert video ID here:",
             "name": "cc_slider_video_url",
@@ -20,6 +39,54 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5aa6f29f011af",
+            "label": "Video background image",
+            "name": "cc_video_background_image",
+            "type": "image",
+            "instructions": "This is the image that will show up before the user physically presses on the play button in order to play the video.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5aa6f2ed36c6a",
+            "label": "Generic background image (not for video)",
+            "name": "cc_generic_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -39,5 +106,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520874505
+    "modified": 1520893041
 }

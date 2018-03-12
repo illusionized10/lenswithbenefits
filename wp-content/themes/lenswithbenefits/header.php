@@ -19,7 +19,7 @@
 
 	<!-- Typekit/Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/wgm5jfv.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,900" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>

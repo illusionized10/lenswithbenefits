@@ -2,10 +2,16 @@ body {
   font-size: 14px;
   font-family: 'Raleway', sans-serif; }
   body a {
+    outline: 0;
     transition: all 0.5s ease; }
     body a:hover {
+      outline: 0;
       text-decoration: none; }
     body a:focus {
+      outline: 0;
+      text-decoration: none; }
+    body a:active {
+      outline: 0;
       text-decoration: none; }
   body p {
     padding: 0;
@@ -99,8 +105,48 @@ body {
     overflow: hidden; }
     body.page-template-tp-front-page .introduction-slider .item {
       position: relative;
-      min-height: 90vh; }
+      min-height: 90vh;
+      overflow-x: hidden; }
+      body.page-template-tp-front-page .introduction-slider .item.video {
+        position: relative;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover; }
+        body.page-template-tp-front-page .introduction-slider .item.video .content a {
+          display: inline-block;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 64px;
+          color: #ffffff; }
+          body.page-template-tp-front-page .introduction-slider .item.video .content a:hover {
+            font-size: 128px; }
+        body.page-template-tp-front-page .introduction-slider .item.video .content span {
+          font-size: 24px;
+          display: block;
+          width: 100%;
+          text-align: center; }
+        body.page-template-tp-front-page .introduction-slider .item.video .slide-text {
+          color: #ffffff;
+          position: absolute;
+          right: -40px;
+          bottom: 100px;
+          width: 33.3%;
+          border-radius: 25px;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 30px; }
+          body.page-template-tp-front-page .introduction-slider .item.video .slide-text .title {
+            font-size: 28px;
+            font-weight: 600; }
+          body.page-template-tp-front-page .introduction-slider .item.video .slide-text .subtitle {
+            font-size: 22px;
+            font-weight: 200; }
+      body.page-template-tp-front-page .introduction-slider .item.image {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover; }
       body.page-template-tp-front-page .introduction-slider .item .content {
+        width: 100%;
+        text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;

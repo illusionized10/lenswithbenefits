@@ -130,6 +130,8 @@ function lenswithbenefits_scripts() {
 
 	wp_enqueue_script('owl-carousel', get_template_directory_uri(). '/assets/js/owl.carousel.min.js' );
 
+	wp_enqueue_script('font-awesome', get_template_directory_uri(). '/assets/js/all.js' );
+
 	wp_enqueue_script('custom', get_template_directory_uri(). '/assets/js/custom.js' );
 
 	// Styles
