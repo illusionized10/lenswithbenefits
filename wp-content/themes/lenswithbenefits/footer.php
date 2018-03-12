@@ -20,8 +20,6 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.3.1.min.js"></script> -->
-
 <?php wp_footer(); ?>
 
 </body>

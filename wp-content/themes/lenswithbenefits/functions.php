@@ -209,7 +209,7 @@ function cc_create_slider() {
 		'label'                 => __( 'Custom Slider', 'text_domain' ),
 		'description'           => __( 'Custom Slider', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

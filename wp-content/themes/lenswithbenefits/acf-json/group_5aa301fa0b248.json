@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_5aa30119117c0",
-            "label": "Video instead of image? Insert URL here:",
+            "label": "Video instead of image? Insert video ID here:",
             "name": "cc_slider_video_url",
             "type": "text",
-            "instructions": "",
+            "instructions": "A video ID would be strictly the last bits of the URL, for example: https:\/\/www.youtube.com\/watch?v=rPR4nb5vYAs the ID would be rPR4nb5vYAs",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,7 +19,6 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "formatting": "html",
             "maxlength": ""
         }
     ],
@@ -40,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520636517
+    "modified": 1520874505
 }

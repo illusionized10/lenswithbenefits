@@ -46,7 +46,8 @@
 				<div class="col-sm-2">
 					<!-- Logo Here -->
 					<a href="<?php echo get_home_url(); ?>">
-						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo"> 
+						<img class="logo" src="http://via.placeholder.com/350x150" />
+						<!-- <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo">  -->
 					</a>
 				</div>
 				<div class="col-sm-5">
