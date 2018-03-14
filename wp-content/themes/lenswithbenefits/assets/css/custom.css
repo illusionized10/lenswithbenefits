@@ -24,6 +24,7 @@ body {
     padding: 0;
     margin: 0; }
     body ul li {
+      display: none;
       padding: 0;
       margin: 0; }
   body header {
