@@ -104,6 +104,20 @@ body {
   body.page-template-tp-front-page .introduction-slider {
     min-height: 90vh;
     overflow: hidden; }
+    body.page-template-tp-front-page .introduction-slider .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%; }
+      body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev {
+        float: left; }
+        body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev:before {
+          content: url("../images/navigation_previous.png"); }
+      body.page-template-tp-front-page .introduction-slider .owl-nav .owl-next {
+        float: right; }
+        body.page-template-tp-front-page .introduction-slider .owl-nav .owl-next:after {
+          content: url("../images/navigation_next.png"); }
     body.page-template-tp-front-page .introduction-slider .item {
       position: relative;
       min-height: 90vh;
@@ -152,5 +166,12 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+  body.page-template-tp-front-page .second-panel {
+    position: relative;
+    min-height: 90vh;
+    background-image: url("../images/second-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
 
 /*# sourceMappingURL=custom.css.map */

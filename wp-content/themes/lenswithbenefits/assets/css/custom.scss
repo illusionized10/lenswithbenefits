@@ -140,6 +140,28 @@ body {
 		.introduction-slider {
 			min-height:90vh;
 			overflow:hidden;
+
+			.owl-nav {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+				width:100%;
+				// z-index:50;
+				.owl-prev {
+					float:left;
+					&:before {
+						content:url('../images/navigation_previous.png'); 
+					}
+				}
+				.owl-next {
+					float:right;
+					&:after {
+						content:url('../images/navigation_next.png'); 
+					}
+				}
+			}
+
 			.item {
 				position:relative;
 				min-height:90vh;
@@ -202,7 +224,17 @@ body {
                     left: 50%;
                     transform: translate(-50%, -50%);
 				}
+
 			}
+		}
+
+		.second-panel {
+			position:relative;
+			min-height:90vh;
+			background-image: url('../images/second-background.jpg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:50% 50%;
 		}
 	}
 }
