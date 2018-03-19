@@ -123,25 +123,19 @@ body {
       left: 0;
       width: 100%; }
       body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot {
-        border: 3px solid #ffffff; }
+        margin-left: 3px;
+        margin-right: 3px; }
         body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot span {
-          width: 0;
-          height: 0;
-          border: 10px solid transparent;
-          border-bottom-color: red;
-          position: relative;
-          top: -10px;
           border-radius: 0px;
-          background: transparent; }
-          body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot span:after {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 10px;
-            width: 0;
-            height: 0;
-            border: 10px solid transparent;
-            border-top-color: red; }
+          background: #fff;
+          height: 20px;
+          text-align: center;
+          transform: rotate(45deg);
+          width: 20px;
+          border-top: 4px solid red;
+          border-left: 4px solid red;
+          border-bottom: 5px solid red;
+          border-right: 5px solid red; }
     body.page-template-tp-front-page .introduction-slider .item {
       position: relative;
       min-height: 90vh;
