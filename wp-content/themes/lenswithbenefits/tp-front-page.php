@@ -20,7 +20,7 @@ get_header(); ?>
 ?>
 
 <div class="introduction-slider">
-	<div class="owl-carousel">
+	<div class="owl-carousel owl-theme">
 		<?php foreach($slider_posts as $item) { ?>
 
 			<?php if(get_field('cc_slider_video_url', $item->ID)) { ?>

@@ -139,7 +139,6 @@ body {
 
 		.introduction-slider {
 			min-height:90vh;
-			overflow:hidden;
 
 			.owl-nav {
                 position: absolute;
@@ -147,7 +146,6 @@ body {
                 left: 50%;
                 transform: translate(-50%, -50%);
 				width:100%;
-				// z-index:50;
 				.owl-prev {
 					float:left;
 					&:before {
@@ -158,6 +156,36 @@ body {
 					float:right;
 					&:after {
 						content:url('../images/navigation_next.png'); 
+					}
+				}
+			}
+
+			.owl-dots {
+				position:absolute;
+				bottom:-60px;
+				left:0;
+				width:100%;
+				.owl-dot {
+					border:3px solid #ffffff;
+					span {
+						width: 0;
+						height: 0;
+						border: 10px solid transparent;
+						border-bottom-color: red;
+						position: relative;
+						top: -10px;
+						border-radius:0px;
+						background:transparent;
+						&:after {
+							content: '';
+							position: absolute;
+							left: -10px;
+							top: 10px;
+							width: 0;
+							height: 0;
+							border: 10px solid transparent;
+							border-top-color: red;
+						}
 					}
 				}
 			}

@@ -102,8 +102,7 @@ body {
         color: #ffffff !important;
         z-index: 30; }
   body.page-template-tp-front-page .introduction-slider {
-    min-height: 90vh;
-    overflow: hidden; }
+    min-height: 90vh; }
     body.page-template-tp-front-page .introduction-slider .owl-nav {
       position: absolute;
       top: 50%;
@@ -118,6 +117,31 @@ body {
         float: right; }
         body.page-template-tp-front-page .introduction-slider .owl-nav .owl-next:after {
           content: url("../images/navigation_next.png"); }
+    body.page-template-tp-front-page .introduction-slider .owl-dots {
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%; }
+      body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot {
+        border: 3px solid #ffffff; }
+        body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot span {
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-bottom-color: red;
+          position: relative;
+          top: -10px;
+          border-radius: 0px;
+          background: transparent; }
+          body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot span:after {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: red; }
     body.page-template-tp-front-page .introduction-slider .item {
       position: relative;
       min-height: 90vh;
