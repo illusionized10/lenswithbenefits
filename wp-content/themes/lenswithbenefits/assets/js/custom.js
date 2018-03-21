@@ -9,6 +9,10 @@ $( document ).ready(function() {
 		    items: 1,
 		    dots: true,
 		});
+
+		// remove the text from the nav buttons, leaving images only
+		$(".owl-prev").empty();
+		$(".owl-next").empty();
 	}
 
 	// Add border divs to active menu item after page has been loaded
