@@ -104,13 +104,14 @@ body {
   body.page-template-tp-front-page .introduction-slider {
     min-height: 90vh; }
     body.page-template-tp-front-page .introduction-slider .owl-nav {
-      z-index: 1;
+      margin-top: 0px;
       position: absolute;
-      top: 70%;
+      top: 50%;
       left: 50%;
       width: 100%;
       transform: translate(-50%, -50%); }
       body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev {
+        z-index: 50;
         float: left;
         background: transparent !important;
         transition: all 0.5s ease; }
@@ -120,6 +121,7 @@ body {
         body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev:hover {
           opacity: 0.7; }
       body.page-template-tp-front-page .introduction-slider .owl-nav .owl-next {
+        z-index: 50;
         float: right;
         background: transparent !important;
         transition: all 0.5s ease; }
@@ -143,7 +145,7 @@ body {
           text-align: center;
           transform: rotate(45deg);
           width: 20px;
-          border-top: 4px solid red;
+          border-top: 4px solid #8455f5;
           border-left: 4px solid red;
           border-bottom: 5px solid red;
           border-right: 5px solid red; }
@@ -165,6 +167,8 @@ body {
           body.page-template-tp-front-page .introduction-slider .item.video .content a:hover {
             font-size: 128px; }
           body.page-template-tp-front-page .introduction-slider .item.video .content a svg {
+            height: 100%;
+            width: 100%;
             z-index: 5000000000000000000000000; }
         body.page-template-tp-front-page .introduction-slider .item.video .content span {
           font-size: 24px;

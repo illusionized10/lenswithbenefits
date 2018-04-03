@@ -1,3 +1,6 @@
+$branding-purple: #8455f5;
+$branding-yellow: #fbca5f;
+
 body {
 
 	font-size:14px;
@@ -48,7 +51,7 @@ body {
 		left:0;
 		width:100%;
 		z-index:50;
-		background:rgba(0,0,0,0.4);
+		background: rgba(0,0,0,0.4);
 		font-family: "marydale" , sans-serif;
 		text-align:center;
 		img {
@@ -140,13 +143,14 @@ body {
 		.introduction-slider {
 			min-height:90vh;
 			.owl-nav {
-				z-index:1;
+				margin-top:0px;
                 position: absolute;
-                top: 70%;
+                top: 50%;
                 left: 50%;
                 width:100%;
                 transform: translate(-50%, -50%);
 				.owl-prev {
+					z-index:50;
 					float:left;
 					background: transparent !important;
 					transition: all 0.5s ease;
@@ -159,6 +163,7 @@ body {
 					}
 				}
 				.owl-next {
+					z-index:50;
 					float:right;
 					background: transparent !important;
 					transition: all 0.5s ease;
@@ -187,7 +192,7 @@ body {
 						text-align: center;
 						transform:rotate(45deg);
 						width:20px;
-					    border-top: 4px solid red;
+					    border-top: 4px solid $branding-purple;
 					    border-left: 4px solid red;
 					    border-bottom: 5px solid red;
 					    border-right: 5px solid red;
@@ -216,6 +221,8 @@ body {
 	                    		font-size:128px;
 	                    	}
 	                    	svg {
+	                    		height:100%;
+	                    		width:100%;
 	                    		z-index:5000000000000000000000000;
 	                    	}
 	                    }

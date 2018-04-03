@@ -46,6 +46,7 @@ get_header(); ?>
 		<?php } //end foreach?>
 	</div>
 </div>
+
 <div class="second-panel">
 	
 </div>
