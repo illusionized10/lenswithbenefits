@@ -44,6 +44,13 @@ body {
 		}
 	}
 
+	.wrapper {
+		position:relative;
+		padding:15px;
+		margin:0 auto;
+		max-width:1560px;
+	}
+
 	header {
 		position:absolute;
 	    padding-top: 20px;
@@ -143,14 +150,15 @@ body {
 		.introduction-slider {
 			min-height:90vh;
 			.owl-nav {
-				margin-top:0px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width:100%;
-                transform: translate(-50%, -50%);
+				margin:0;
 				.owl-prev {
-					z-index:50;
+					z-index:1;
+					margin-top:0px;
+	                position: absolute;
+	                top: 50%;
+	                left: 30px;
+	                width:60px;
+	                transform: translate(-50%, -50%);
 					float:left;
 					background: transparent !important;
 					transition: all 0.5s ease;
@@ -163,7 +171,13 @@ body {
 					}
 				}
 				.owl-next {
-					z-index:50;
+					z-index:1;
+					margin-top:0px;
+	                position: absolute;
+	                top: 50%;
+	                right: 30px;
+	                width:60px;
+	                transform: translate(-50%, -50%);
 					float:right;
 					background: transparent !important;
 					transition: all 0.5s ease;
@@ -187,15 +201,15 @@ body {
 					margin-right:3px;
 					span {
 						border-radius:0px;
-						background: #fff;
+						background: $branding-yellow;
 						height: 20px;
 						text-align: center;
-						transform:rotate(45deg);
+						transform: rotate(45deg);
 						width:20px;
-					    border-top: 4px solid $branding-purple;
-					    border-left: 4px solid red;
-					    border-bottom: 5px solid red;
-					    border-right: 5px solid red;
+					    border-top: 5px solid $branding-purple;
+					    border-left: 5px solid $branding-purple;
+					    border-bottom: 5px solid $branding-purple;
+					    border-right: 5px solid $branding-purple;
 					}
 				}
 			}
@@ -215,15 +229,10 @@ body {
 	                    	display:inline-block;
 	                    	margin:0 auto;
 	                    	text-align:center;
-	                    	font-size:64px;
 	                    	color:#ffffff;
+	                    	font-size:64px;
 	                    	&:hover {
-	                    		font-size:128px;
-	                    	}
-	                    	svg {
-	                    		height:100%;
-	                    		width:100%;
-	                    		z-index:5000000000000000000000000;
+                    			font-size:84px;
 	                    	}
 	                    }
                     	span {
@@ -260,7 +269,6 @@ body {
                 }
 
 				.content {
-					z-index:500000000000;
 					width:100%;
 					text-align:center;
                     position: absolute;
@@ -279,6 +287,7 @@ body {
 			background-size:cover;
 			background-repeat:no-repeat;
 			background-position:50% 50%;
+			padding-top:90px;
 		}
 	}
 }

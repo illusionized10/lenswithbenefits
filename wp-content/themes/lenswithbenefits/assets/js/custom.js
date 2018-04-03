@@ -1,9 +1,9 @@
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
     
     // Check to see if we are on the front page by checking the body class 
-	if ($("body").hasClass("page-template-tp-front-page")) {
+	if (jQuery("body").hasClass("page-template-tp-front-page")) {
 		// We are on the front page, start the owl carousel
-		$(".owl-carousel").owlCarousel({
+		jQuery(".owl-carousel").owlCarousel({
 		    loop:true,
 		    nav:true,
 		    items: 1,
@@ -11,12 +11,12 @@ $( document ).ready(function() {
 		});
 
 		// remove the text from the nav buttons, leaving images only
-		$(".owl-prev").empty();
-		$(".owl-next").empty();
+		jQuery(".owl-prev").empty();
+		jQuery(".owl-next").empty();
 	}
 
 	// Add border divs to active menu item after page has been loaded
-	var activeMenuItem = $(".site-header ul").find('li.current_page_item');
+	var activeMenuItem = jQuery(".site-header ul").find('li.current_page_item');
 	activeMenuItem.prepend(
 		'<span class="corner TL"></span>' +
 		'<span class="corner TLT"></span>' +

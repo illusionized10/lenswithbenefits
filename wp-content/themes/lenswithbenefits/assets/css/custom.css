@@ -27,6 +27,11 @@ body {
       display: none;
       padding: 0;
       margin: 0; }
+  body .wrapper {
+    position: relative;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 1560px; }
   body header {
     position: absolute;
     padding-top: 20px;
@@ -104,14 +109,15 @@ body {
   body.page-template-tp-front-page .introduction-slider {
     min-height: 90vh; }
     body.page-template-tp-front-page .introduction-slider .owl-nav {
-      margin-top: 0px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      transform: translate(-50%, -50%); }
+      margin: 0; }
       body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev {
-        z-index: 50;
+        z-index: 1;
+        margin-top: 0px;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        width: 60px;
+        transform: translate(-50%, -50%);
         float: left;
         background: transparent !important;
         transition: all 0.5s ease; }
@@ -121,7 +127,13 @@ body {
         body.page-template-tp-front-page .introduction-slider .owl-nav .owl-prev:hover {
           opacity: 0.7; }
       body.page-template-tp-front-page .introduction-slider .owl-nav .owl-next {
-        z-index: 50;
+        z-index: 1;
+        margin-top: 0px;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        width: 60px;
+        transform: translate(-50%, -50%);
         float: right;
         background: transparent !important;
         transition: all 0.5s ease; }
@@ -140,15 +152,15 @@ body {
         margin-right: 3px; }
         body.page-template-tp-front-page .introduction-slider .owl-dots .owl-dot span {
           border-radius: 0px;
-          background: #fff;
+          background: #fbca5f;
           height: 20px;
           text-align: center;
           transform: rotate(45deg);
           width: 20px;
-          border-top: 4px solid #8455f5;
-          border-left: 4px solid red;
-          border-bottom: 5px solid red;
-          border-right: 5px solid red; }
+          border-top: 5px solid #8455f5;
+          border-left: 5px solid #8455f5;
+          border-bottom: 5px solid #8455f5;
+          border-right: 5px solid #8455f5; }
     body.page-template-tp-front-page .introduction-slider .item {
       position: relative;
       min-height: 90vh;
@@ -162,14 +174,10 @@ body {
           display: inline-block;
           margin: 0 auto;
           text-align: center;
-          font-size: 64px;
-          color: #ffffff; }
+          color: #ffffff;
+          font-size: 64px; }
           body.page-template-tp-front-page .introduction-slider .item.video .content a:hover {
-            font-size: 128px; }
-          body.page-template-tp-front-page .introduction-slider .item.video .content a svg {
-            height: 100%;
-            width: 100%;
-            z-index: 5000000000000000000000000; }
+            font-size: 84px; }
         body.page-template-tp-front-page .introduction-slider .item.video .content span {
           font-size: 24px;
           display: block;
@@ -195,7 +203,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover; }
       body.page-template-tp-front-page .introduction-slider .item .content {
-        z-index: 500000000000;
         width: 100%;
         text-align: center;
         position: absolute;
@@ -208,6 +215,7 @@ body {
     background-image: url("../images/second-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    padding-top: 90px; }
 
 /*# sourceMappingURL=custom.css.map */
