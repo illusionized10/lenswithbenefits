@@ -54,13 +54,25 @@ get_header(); ?>
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="http://via.placeholder.com/660x805">
+
+				<div class="image-area">
+					<img src="http://via.placeholder.com/660x805">
+				</div>
+				
 			</div>
 			<div class="col-md-6">
-				<h2>Add an interesting title.</h2>
+
+				<div class="content-area">
+					<h2>Add an interesting title.</h2>
+				</div>
+
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="service-panel">
+	
 </div>
 
 <?php get_footer();
