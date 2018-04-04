@@ -1,3 +1,5 @@
+@import "global.scss";
+
 $branding-purple: #8455f5;
 $branding-yellow: #fbca5f;
 
@@ -5,51 +7,6 @@ body {
 
 	font-size:14px;
 	font-family: 'Raleway', sans-serif;
-
-	a {
-		outline:0;
-		transition: all 0.5s ease;
-		&:hover {
-			outline:0;
-			text-decoration:none;
-		}
-		&:focus {
-			outline:0;
-			text-decoration:none;
-		}
-		&:active{
-			outline:0;
-			text-decoration:none;
-		}
-	}
-
-	p {
-		padding:0;
-		margin:0;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "marydale" , sans-serif;;
-		padding: 0 ;
-		margin: 0 ;
-	}
-
-	ul {
-		padding:0;
-		margin:0;
-		li {
-			display:none;
-			padding:0;
-			margin:0;
-		}
-	}
-
-	.wrapper {
-		position:relative;
-		padding:15px;
-		margin:0 auto;
-		max-width:1560px;
-	}
 
 	header {
 		position:absolute;
@@ -288,6 +245,24 @@ body {
 			background-repeat:no-repeat;
 			background-position:50% 50%;
 			padding-top:90px;
+			.image-area {
+
+			}
+			.content-area {
+				h2 {
+					color:#ffffff;
+					font-size:52px;
+					@include breakpoint(md){
+						font-size:72px;
+					}
+				}
+				p {
+					color:#ffffff;
+					@include breakpoint(md) {
+						font-size:18px;
+					}
+				}
+			}
 		}
 	}
 }

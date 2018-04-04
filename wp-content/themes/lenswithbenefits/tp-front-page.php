@@ -22,30 +22,29 @@ get_header(); ?>
 <div class="introduction-slider">
 	<div class="owl-carousel owl-theme">
 
+		<?php foreach($slider_posts as $item) { ?>
 
-			<?php foreach($slider_posts as $item) { ?>
-
-				<?php if(get_field('cc_slider_video_url', $item->ID)) { ?>
-					<div class="item video" style="background-image:url('<?php echo get_field("cc_video_background_image", $item->ID); ?>');">
-						<div class="content">
-							<a href="<?php echo get_field('cc_slider_video_url', $item->ID); ?>" class="mobx">
-								<i class="far fa-play-circle"></i>
-							</a>
-						</div>
-						<div class="slide-text">
-							<div class="title"><?php echo $item->post_title; ?></div>
-							<div class="subtitle"><?php echo get_field('cc_slide_subtitle', $item->ID); ?></div> 
-						</div>
+			<?php if(get_field('cc_slider_video_url', $item->ID)) { ?>
+				<div class="item video" style="background-image:url('<?php echo get_field("cc_video_background_image", $item->ID); ?>');">
+					<div class="content">
+						<a href="<?php echo get_field('cc_slider_video_url', $item->ID); ?>" class="mobx">
+							<i class="far fa-play-circle"></i>
+						</a>
 					</div>
-				<?php } else { ?>
-					<div class="item image" style="">
-						<div class="content">
-							<div class="title"><?php echo $item->post_title; ?></div>
-						</div>
+					<div class="slide-text">
+						<div class="title"><?php echo $item->post_title; ?></div>
+						<div class="subtitle"><?php echo get_field('cc_slide_subtitle', $item->ID); ?></div> 
 					</div>
-				<?php }  //endif ?> 
+				</div>
+			<?php } else { ?>
+				<div class="item image" style="">
+					<div class="content">
+						<div class="title"><?php echo $item->post_title; ?></div>
+					</div>
+				</div>
+			<?php }  //endif ?> 
 
-			<?php } //end foreach?>
+		<?php } //end foreach?>
 
 	</div>
 </div>
@@ -64,6 +63,9 @@ get_header(); ?>
 
 				<div class="content-area">
 					<h2>Add an interesting title.</h2>
+					<p>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque.
+					</p>
 				</div>
 
 			</div>

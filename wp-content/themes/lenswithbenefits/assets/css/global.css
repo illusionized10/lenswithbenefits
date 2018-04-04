@@ -1,0 +1,100 @@
+.transition {
+  -webkit-transition: 0.25s all ease;
+  -moz-transition: 0.25s all ease;
+  -ms-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease; }
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "marydale" , sans-serif;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #fff; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 55px; } }
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #f2f2f2;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #cccccc; }
+
+h4 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #e6e6e6; }
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c7b299; }
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #999; }
+
+ul {
+  z-index: 50;
+  padding: 0;
+  margin: 0; }
+
+li {
+  font-size: 14px;
+  z-index: 50;
+  margin: 0;
+  padding: 0; }
+
+a {
+  outline: 0;
+  transition: all 0.5s ease; }
+  a:hover {
+    outline: 0;
+    text-decoration: none; }
+  a:focus {
+    outline: 0;
+    text-decoration: none; }
+  a:active {
+    outline: 0;
+    text-decoration: none; }
+
+p {
+  font-size: 14px;
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
+  z-index: 50; }
+
+input {
+  transition: all 0.5s ease; }
+  input:focus {
+    outline: none; }
+
+.wrapper {
+  position: relative;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1560px; }
+
+/*# sourceMappingURL=global.css.map */
