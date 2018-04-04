@@ -1,56 +1,12 @@
 @import "mixins.scss";
 
+$branding-purple: #8455f5;
+$branding-yellow: #fbca5f;
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: "marydale" , sans-serif;;
+	font-family: "marydale" , sans-serif;
 	padding: 0 ;
 	margin: 0 ;
-}
-
-h1 {
-	text-transform:uppercase;
-	font-size: 32px;
-	font-weight: 300;
-	line-height: 1.2em;
-	color: #fff;
-	@include breakpoint(md) {
-		font-size:55px;
-	}
-}
-
-h2 {
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 1.2em;	
-	color: #f2f2f2;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 1.2em;
-	text-transform: uppercase;
-	color: #cccccc;
-}
-
-h4 {
-	font-size: 22px;
-	font-weight: normal;
-	line-height: 1.2em;
-	text-transform: uppercase;
-	color: #e6e6e6;	
-}
-
-h5 {
-	font-size: 18px;
-	font-weight: 600;
-	color: #c7b299;
-}
-
-h6 {
-	font-size: 16px;
-	font-weight: 600;
-	color: #999;
 }
 
 ul {
@@ -103,4 +59,36 @@ input {
 	padding:15px;
 	margin:0 auto;
 	max-width:1560px;
+}
+
+.custom-button {
+	font-family: "marydale" , sans-serif;
+	background-image: linear-gradient(to right, $branding-yellow 0%, $branding-purple 100%);
+	box-sizing: border-box;
+	color: #00a84f;
+	display: block;
+	height: 80px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 4px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 264px;
+	z-index: 2;
+	&:hover {
+		color: #fff;
+		span {
+			background:transparent;
+		}
+	}
+	span {
+		align-items: center;
+		background: #e7e8e9;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		transition: all 0.5s ease;
+		width: 100%;
+	}
 }
