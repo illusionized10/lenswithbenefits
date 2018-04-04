@@ -60,35 +60,3 @@ input {
 	margin:0 auto;
 	max-width:1560px;
 }
-
-.custom-button {
-	font-family: "marydale" , sans-serif;
-	background-image: linear-gradient(to right, $branding-yellow 0%, $branding-purple 100%);
-	box-sizing: border-box;
-	color: #00a84f;
-	display: block;
-	height: 80px;
-	letter-spacing: 1px;
-	margin: 0 auto;
-	padding: 4px;
-	position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 264px;
-	z-index: 2;
-	&:hover {
-		color: #fff;
-		span {
-			background:transparent;
-		}
-	}
-	span {
-		align-items: center;
-		background: #e7e8e9;
-		display: flex;
-		justify-content: center;
-		height: 100%;
-		transition: all 0.5s ease;
-		width: 100%;
-	}
-}
