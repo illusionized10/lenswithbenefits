@@ -1,3 +1,4 @@
+@import "svg-hovers.scss";
 @import "global.scss";
 
 body {
@@ -153,9 +154,23 @@ body {
 				.owl-dot {
 					margin-left:3px;
 					margin-right:3px;
+					&.active {
+						span {
+							border-radius:0px;
+							background: $branding-yellow;
+							height: 20px;
+							text-align: center;
+							transform: rotate(45deg);
+							width:20px;
+						    border-top: 5px solid $branding-purple;
+						    border-left: 5px solid $branding-purple;
+						    border-bottom: 5px solid $branding-purple;
+						    border-right: 5px solid $branding-purple;
+						}
+					}
 					span {
 						border-radius:0px;
-						background: $branding-yellow;
+						background: #202020;
 						height: 20px;
 						text-align: center;
 						transform: rotate(45deg);
@@ -237,16 +252,43 @@ body {
 		.second-panel {
 			position:relative;
 			min-height:90vh;
+			height:auto;
 			background-image: url('../images/second-background.jpg');
 			background-size:cover;
 			background-repeat:no-repeat;
 			background-position:50% 50%;
 			padding-top:90px;
+			padding-bottom:60px;
+			.title {
+				color:#ffffff;
+				padding-bottom:30px;
+				.main {
+					h3 {
+						font-size:48px;
+					}
+				}
+				.sub {
+					h2 {
+						font-size:72px;
+						padding-left:60px;
+						text-shadow: -3px -4px 0px rgba(124, 102, 55, 1);
+					}
+				}
+			}
 			.image-area {
-
+				position:relative;
+				.overlay-square {
+					position:absolute;
+					border:3px solid $branding-purple;
+					background:transparent;
+					bottom:-30px;
+					left:30px;
+					width: 660px;
+					height: 100%;
+				}
 			}
 			.content-area {
-
+				padding-top:160px;
 				h2 {
 					color:#ffffff;
 					font-size:52px;
@@ -264,13 +306,30 @@ body {
 					}
 				}
 				.button-area {
-					margin-top:45px;
+					margin-top:30px;
 				}
 			}
 		}
 
 		.service-panel {
-
+			background-image: url('../images/services-panel-image.jpg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:50% 50%;
+			h2 {
+				font-size:72px;
+				color:$branding-yellow;
+				padding-top:90px;
+				font-weight:400;
+				text-align:center;
+				padding-bottom:60px;
+			}
+			h4 {
+				font-size:32px;
+				color:$branding-yellow;
+				text-align:center;
+				padding-bottom:30px;
+			}
 		}
 	}
 }
@@ -290,13 +349,16 @@ a.custom-button {
 }
 
 a.custom-button-new {
+	font-family: "marydale" , sans-serif;
 	border:3px solid #ffffff;
     min-width: 150px;
     max-width: 250px;
     display: block;
     padding: 1em 2em;
+    font-size:18px;
     text-align:center;
     background: none;
+    text-transform:uppercase;
     color: #ffffff;
     vertical-align: middle;
     position: relative;
@@ -304,7 +366,6 @@ a.custom-button-new {
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
-	width: 245px;
 	-webkit-transition: border-color 0.3s, color 0.3s;
 	transition: border-color 0.3s, color 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -326,11 +387,11 @@ a.custom-button-new {
 		transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 	}
 	&:hover {
-		color: #fff;
-		border-color: #3f51b5;
+		color: #ffffff;
+		border-color: $branding-purple;
 		&::before {
 			opacity: 1;
-			background-color: #3f51b5;
+			background-color: $branding-purple;
 			-webkit-transform: rotate3d(0, 0, 1, 0deg);
 			transform: rotate3d(0, 0, 1, 0deg);
 			-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
