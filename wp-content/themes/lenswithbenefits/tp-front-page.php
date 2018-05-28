@@ -95,43 +95,43 @@ get_header(); ?>
 		<section id="grid" class="grid clearfix">
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/family-image.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Crystalline</h5>
-						<p>Soko radicchio bunya nuts gram dulse.</p>
+						<h5>Family & Siblings</h5>
+						<p></p>
 						<button>View</button>
 					</figcaption>
 				</figure>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/2.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pet-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Cacophony</h5>
-						<p>Two greens tigernut soybean radish.</p>
+						<h5>Animals &amp; Pets</h5>
+						<p></p>
 						<button>View</button>
 					</figcaption>
 				</figure>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/3.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boudoir-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Languid</h5>
-						<p>Beetroot water spinach okra water.</p>
+						<h5>Boudoir</h5>
+						<p></p>
 						<button>View</button>
 					</figcaption>
 				</figure>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/4.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/landscape-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Serene</h5>
+						<h5>Landscape</h5>
 						<p>Water spinach arugula pea tatsoi.</p>
 						<button>View</button>
 					</figcaption>
@@ -139,10 +139,10 @@ get_header(); ?>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/5.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Nebulous</h5>
+						<h5>Wedding</h5>
 						<p>Pea horseradish azuki bean lettuce.</p>
 						<button>View</button>
 					</figcaption>
@@ -150,10 +150,10 @@ get_header(); ?>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/6.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portrait-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Iridescent</h5>
+						<h5>Portraits</h5>
 						<p>A grape silver beet watercress potato.</p>
 						<button>View</button>
 					</figcaption>
@@ -161,10 +161,10 @@ get_header(); ?>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/7.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/urban-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Resonant</h5>
+						<h5>Urban &amp; Street</h5>
 						<p>Chickweed okra pea winter purslane.</p>
 						<button>View</button>
 					</figcaption>
@@ -172,10 +172,10 @@ get_header(); ?>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/8.png" />
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boudoir-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Zenith</h5>
+						<h5>Automotive &amp; Sports</h5>
 						<p>Salsify taro catsear garlic gram.</p>
 						<button>View</button>
 					</figcaption>
