@@ -117,21 +117,10 @@ get_header(); ?>
 			</a>
 			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
 				<figure>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boudoir-photography.jpg" />
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-					<figcaption>
-						<h5>Boudoir</h5>
-						<p></p>
-						<button>View</button>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wedding-photography.jpg" />
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
-						<h5>Wedding</h5>
+						<h5>Events <br>&amp; Weddings</h5>
 						<p></p>
 						<button>View</button>
 					</figcaption>
@@ -143,6 +132,17 @@ get_header(); ?>
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
 					<figcaption>
 						<h5>Portraits</h5>
+						<p></p>
+						<button>View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+				<figure>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boudoir-photography.jpg" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+					<figcaption>
+						<h5>Boudoir</h5>
 						<p></p>
 						<button>View</button>
 					</figcaption>
@@ -182,6 +182,12 @@ get_header(); ?>
 				</figure>
 			</a>
 		</section>
+	</div>
+</div>
+
+<div class="promo-panel">
+	<div class="wrapper">
+		<div>dddddddddddddddd</div>
 	</div>
 </div>
 

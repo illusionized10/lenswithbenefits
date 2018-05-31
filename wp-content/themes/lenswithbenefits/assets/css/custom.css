@@ -158,7 +158,8 @@
   background: #52be7f; }
 
 .demo-3 .grid figcaption h5 {
-  color: #52be7f; }
+  color: #333333;
+  font-weight: 600; }
 
 .demo-3 .grid a:hover figcaption h5 {
   -webkit-transform: translateY(5px);
@@ -505,7 +506,8 @@ body {
     background-image: url("../images/services-panel-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    padding-bottom: 30px; }
     body.page-template-tp-front-page .service-panel h2 {
       font-size: 72px;
       color: #fbca5f;
