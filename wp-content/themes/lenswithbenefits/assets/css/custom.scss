@@ -16,6 +16,7 @@ body {
 		background: rgba(0,0,0,0.4);
 		font-family: "marydale" , sans-serif;
 		text-align:center;
+		
 		img {
 			&.logo {
 				height:auto;
@@ -24,6 +25,18 @@ body {
 				text-align:center;
 			}	
 		}
+		
+		.mobile-menu-toggle {
+			display:block;
+			@include breakpoint(md) {
+				display:none;
+			}
+		}
+
+		.mobile-menu {
+			display:none;
+		}
+
 		ul {
 			li {
 				display:inline-block;

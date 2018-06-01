@@ -28,6 +28,7 @@
 	// Getters/Setters
 	$menuLeftArgs = array( 'menu' => 'left-menu' );
 	$menuRightArgs = array( 'menu' => 'right-menu' );
+	$mobileMenuArgs = array( 'menu' => 'mobile-menu' );
 
 ?>
 
@@ -49,12 +50,21 @@
 						<img class="logo" src="http://via.placeholder.com/350x150" />
 						<!-- <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo">  -->
 					</a>
+					<div class="mobie-menu-toggle">
+						<span id="moby-button">
+							<i class="material-icons">menu</i>
+						</span>
+					</div>
 				</div>
 				<div class="col-sm-5">
 					<!-- Right Side Menu -->
 					<?php wp_nav_menu($menuRightArgs); ?>
 				</div>
 			</div>
+		</div>
+
+		<div class="mobile-menu">
+			<?php wp_nav_menu($mobileMenuArgs); ?>
 		</div>
 
 	</header><!-- #masthead -->

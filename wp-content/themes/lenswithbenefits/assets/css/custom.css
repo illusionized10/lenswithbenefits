@@ -282,6 +282,13 @@ body {
       max-width: 130px;
       margin: 0 auto;
       text-align: center; }
+    body header .mobile-menu-toggle {
+      display: block; }
+      @media (min-width: 992px) {
+        body header .mobile-menu-toggle {
+          display: none; } }
+    body header .mobile-menu {
+      display: none; }
     body header ul li {
       display: inline-block;
       position: relative;

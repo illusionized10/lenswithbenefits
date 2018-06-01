@@ -134,6 +134,8 @@ function lenswithbenefits_scripts() {
 
 	wp_enqueue_script('svg-snap-script', get_template_directory_uri(). '/assets/js/snap.svg-min.js' );
 
+	wp_enqueue_script('moby-js', get_template_directory_uri(). '/assets/js/moby.min.js' );
+
 	wp_enqueue_script('ajaxchimp', get_template_directory_uri(). '/assets/js/jquery.ajaxchimp.js' );
 
 	wp_enqueue_script('custom', get_template_directory_uri(). '/assets/js/custom.js' );
@@ -146,6 +148,8 @@ function lenswithbenefits_scripts() {
 	wp_enqueue_style( 'owl-carousel-styles', get_template_directory_uri()."/assets/css/owl.carousel.min.css");
 
 	wp_enqueue_style( 'owl-theme-styles', get_template_directory_uri()."/assets/css/owl.theme.default.min.css");
+
+	wp_enqueue_style( 'moby-styles', get_template_directory_uri()."/assets/css/moby.min.css");
 
 	wp_enqueue_style( 'custom-styles', get_template_directory_uri()."/assets/css/custom.css");
 }

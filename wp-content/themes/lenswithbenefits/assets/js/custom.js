@@ -33,4 +33,9 @@ $( document ).ready(function() {
 		url: 'https://lenswithbenefits.us18.list-manage.com/subscribe/post?u=b62b5a9130ac7a975c0c51215&amp;id=2c0ab5a2e8',
 	});
 
+	var mobyMenu = new Moby({
+	    menu       : $('#menu-mobile-menu'), // The menu that will be cloned
+		mobyTrigger: $('#moby-button'), // Button that will trigger the Moby menu to open
+	});
+
 });
