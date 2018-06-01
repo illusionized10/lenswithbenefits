@@ -49,6 +49,7 @@ get_header(); ?>
 	</div>
 </div>
 
+
 <div class="second-panel">
 	<div class="wrapper">
 		<div class="row">
@@ -83,6 +84,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
 
 <div class="service-panel">
 	<div class="wrapper">
@@ -187,10 +189,28 @@ get_header(); ?>
 
 <div class="promo-panel">
 	<div class="wrapper">
-		<div>dddddddddddddddd</div>
+		<div class="promo-title"><h2>Join Our Newsletter</h2></div>
+		<div class="promo-text">
+			<p>
+				Signup to our newsletter and receive a 20% discount on any session!<br>
+				We also send out seasonal deals, be sure to check your inbox!
+			</p>
+		</div>
+		<div class="promo-fields">
+			<div class="subscribe">
+
+				<div id="mc_embed_signup">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="SIGNUP">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+				</div>			
+
+            </div>
+		</div>
 	</div>
 </div>
-
 <script type="text/javascript">
 	(function() {
 		function init() {

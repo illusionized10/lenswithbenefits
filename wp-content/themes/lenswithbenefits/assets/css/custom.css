@@ -520,6 +520,69 @@ body {
       color: #fbca5f;
       text-align: center;
       padding-bottom: 30px; }
+  body.page-template-tp-front-page .promo-panel {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../images/newsletter-panel-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+    body.page-template-tp-front-page .promo-panel .promo-title {
+      padding-bottom: 30px; }
+      body.page-template-tp-front-page .promo-panel .promo-title h2 {
+        font-size: 72px; }
+    body.page-template-tp-front-page .promo-panel .promo-text p {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 30px; }
+    body.page-template-tp-front-page .promo-panel .subscribe {
+      max-width: 520px;
+      padding: 0;
+      margin: 0 auto;
+      position: relative; }
+      body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup {
+        width: 100%; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup ::-webkit-input-placeholder {
+          color: white;
+          font-weight: 300;
+          font-size: 14px; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup :-moz-placeholder {
+          color: white;
+          font-weight: 300;
+          font-size: 14px; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup ::-moz-placeholder {
+          color: white;
+          font-weight: 300;
+          font-size: 14px; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup :-ms-input-placeholder {
+          color: white;
+          font-weight: 300;
+          font-size: 14px; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup input[type="email"] {
+          color: #ffffff;
+          display: inline-block;
+          width: 75%;
+          float: left;
+          background-color: #202020;
+          border: 1px solid #ffffff;
+          border-radius: 0px;
+          padding: 10px 15px 10px 15px; }
+        body.page-template-tp-front-page .promo-panel .subscribe #mc_embed_signup input[type="submit"] {
+          height: 43px;
+          font-size: 16px;
+          display: inline-block;
+          float: right;
+          width: 25%;
+          border-radius: 0px;
+          color: #ffffff;
+          text-transform: uppercase;
+          border: 1px solid #ffffff;
+          background-color: #202020;
+          display: inline-block;
+          font-family: "marydale" , sans-serif; }
 
 a.custom-button {
   padding: 10px 40px;
