@@ -277,11 +277,31 @@ body {
     background: rgba(0, 0, 0, 0.4);
     font-family: "marydale" , sans-serif;
     text-align: center; }
-    body header img.logo {
-      height: auto;
-      max-width: 130px;
-      margin: 0 auto;
-      text-align: center; }
+    body header .logo-area {
+      float: left; }
+      @media (min-width: 768px) {
+        body header .logo-area {
+          float: none; } }
+      body header .logo-area img.logo {
+        height: auto;
+        max-width: 130px;
+        text-align: center; }
+        @media (min-width: 992px) {
+          body header .logo-area img.logo {
+            margin: 0 auto;
+            text-align: center; } }
+    body header .moby-menu-toggle {
+      float: right;
+      color: #ffffff;
+      font-size: 32px; }
+      @media (min-width: 768px) {
+        body header .moby-menu-toggle {
+          display: none; } }
+    body header .menu-left-menu-container, body header .menu-right-menu-container {
+      display: none; }
+      @media (min-width: 992px) {
+        body header .menu-left-menu-container, body header .menu-right-menu-container {
+          display: block; } }
     body header .mobile-menu-toggle {
       display: block; }
       @media (min-width: 992px) {

@@ -17,13 +17,38 @@ body {
 		font-family: "marydale" , sans-serif;
 		text-align:center;
 		
-		img {
-			&.logo {
-				height:auto;
-				max-width:130px;
-				margin:0 auto;
-				text-align:center;
-			}	
+		.logo-area {
+			float:left;
+			@include breakpoint(sm) {
+				float:none;
+			}
+			img {
+				&.logo {
+					height:auto;
+					max-width:130px;
+					text-align:center;
+					@include breakpoint(md) {
+						margin:0 auto;
+						text-align:center;
+					}
+				}	
+			}
+		}
+		.moby-menu-toggle {
+			float:right;
+			color:#ffffff;
+			font-size:32px;
+			@include breakpoint(sm) {
+				display:none;
+			}
+		}
+
+
+		.menu-left-menu-container, .menu-right-menu-container{
+			display:none;
+			@include breakpoint(md){
+				display:block;
+			}
 		}
 		
 		.mobile-menu-toggle {

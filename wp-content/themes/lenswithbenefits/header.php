@@ -40,23 +40,25 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<!-- Left Side Menu -->
 					<?php wp_nav_menu($menuLeftArgs); ?>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-md-2">
 					<!-- Logo Here -->
-					<a href="<?php echo get_home_url(); ?>">
-						<img class="logo" src="http://via.placeholder.com/350x150" />
-						<!-- <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo">  -->
-					</a>
-					<div class="mobie-menu-toggle">
+					<div class="logo-area">
+						<a href="<?php echo get_home_url(); ?>">
+							<img class="logo" src="http://via.placeholder.com/350x150" />
+							<!-- <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Lens With Benefits Logo">  -->
+						</a>
+					</div>
+					<div class="moby-menu-toggle">
 						<span id="moby-button">
 							<i class="material-icons">menu</i>
 						</span>
 					</div>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-md-5">
 					<!-- Right Side Menu -->
 					<?php wp_nav_menu($menuRightArgs); ?>
 				</div>
