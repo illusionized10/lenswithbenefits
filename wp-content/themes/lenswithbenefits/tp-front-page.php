@@ -211,6 +211,49 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
+<div class="contact-us-panel">
+	<div class="wrapper">
+		<div class="contact-panel">
+			<img class="left-lamp" src="<?php echo get_template_directory_uri(); ?>/assets/images/left-lamp.png">
+			<img class="right-lamp" src="<?php echo get_template_directory_uri(); ?>/assets/images/right-lamp.png">
+			<h3>Interested? Let's Chat!</h3>
+			<p>We are looking forward to hearing from you! If you have anything specific in mind, feel free to ask us using the form below:</p>
+			<div class="contact-form">
+				<div class="row">
+					<div class="col-6">
+						<label>Name: </label>
+						<input type="text">
+					</div>
+					<div class="col-6">
+						<label>Email: </label>
+						<input type="text">
+					</div>
+					<div class="col-6">
+						<label>Phone Number</label>
+						<input type="text">
+					</div>
+					<div class="col-6">
+						<label>Subject</label>
+						<input type="text">
+					</div>
+					<div class="col-12">
+						<label>How Can We Help?</label>
+						<textarea></textarea>
+					</div>
+					<div class="col-12">
+						<div class="submit-area">
+							<button class="custom-button-new">SAY HELLO</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="left-floor-lamp" src="<?php echo get_template_directory_uri(); ?>/assets/images/floor-lamp-left.png">
+			<img class="right-floor-lamp" src="<?php echo get_template_directory_uri(); ?>/assets/images/floor-lamp-right.png">
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript">
 	(function() {
 		function init() {
