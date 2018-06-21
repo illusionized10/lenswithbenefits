@@ -149,11 +149,17 @@ body {
 					margin-top:0px;
 	                position: absolute;
 	                top: 50%;
-	                left: 120px;
+	                left: 30px;
 	                width:60px;
 	                transform: translate(-50%, -50%);
 					background: transparent !important;
 					transition: all 0.5s ease;
+					@include breakpoint(md) {
+						left: 60px;
+					}
+					@include breakpoint(lg) {
+						left: 120px;
+					}
 					&:before {
 						// max-width:50px;
 						content: url('../images/navigation_previous.png');
@@ -167,13 +173,18 @@ body {
 					margin-top:0px;
 	                position: absolute;
 	                top: 50%;
-	                right: 90px;
+	                right: -30px;
 	                width:60px;
 	                transform: translate(-50%, -50%);
 					background: transparent !important;
 					transition: all 0.5s ease;
+					@include breakpoint(md) {
+						right: 30px;
+					}
+					@include breakpoint(lg) {
+						right: 90px;
+					}
 					&:after {
-						// max-width:50px;
 						content: url('../images/navigation_next.png'); 
 					}
 					&:hover {
@@ -250,12 +261,18 @@ body {
                     .slide-text {
                     	color:#ffffff;
                     	position:absolute;
-                    	right:-40px;
-                    	bottom:60px;
-                    	width:33.3%;
-                    	border-radius:10px;
                     	background-color: rgba(0,0,0,0.5);
-                    	padding:30px;
+                    	right:0px;
+                    	bottom:0px;
+                    	width:100%;
+                    	padding:15px;
+                    	@include breakpoint(xl) {
+                    		border-radius:10px;
+	                    	right:-40px;
+	                    	bottom:60px;
+	                    	width:33.3%;
+	                    	padding:30px;
+                    	}
                     	.title {
                     		font-size:28px;
                     		font-weight:600;
