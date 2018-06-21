@@ -3,6 +3,11 @@
 $branding-purple: #8455f5;
 $branding-yellow: #fbca5f;
 
+$font-large:36px;
+@include breakpoint(lg){
+	$font-large:72px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "marydale" , sans-serif;
 	padding: 0 ;

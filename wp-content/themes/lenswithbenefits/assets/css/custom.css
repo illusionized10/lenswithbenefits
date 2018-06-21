@@ -498,28 +498,17 @@ body {
       body.page-template-tp-front-page .second-panel .title .main h3 {
         font-size: 48px; }
       body.page-template-tp-front-page .second-panel .title .sub h2 {
-        font-size: 72px;
+        font-size: 36px;
         padding-left: 60px;
         text-shadow: -3px -4px 0px #7c6637; }
     body.page-template-tp-front-page .second-panel .image-area {
       position: relative; }
-      body.page-template-tp-front-page .second-panel .image-area .overlay-square {
-        position: absolute;
-        border: 3px solid #8455f5;
-        background: transparent;
-        bottom: -30px;
-        left: 30px;
-        width: 660px;
-        height: 100%; }
     body.page-template-tp-front-page .second-panel .content-area {
       padding-top: 160px; }
       body.page-template-tp-front-page .second-panel .content-area h2 {
         color: #ffffff;
-        font-size: 52px;
-        padding-bottom: 15px; }
-        @media (min-width: 992px) {
-          body.page-template-tp-front-page .second-panel .content-area h2 {
-            font-size: 72px; } }
+        padding-bottom: 15px;
+        font-size: 36px; }
       body.page-template-tp-front-page .second-panel .content-area p {
         max-width: 500px;
         text-align: left;
@@ -536,35 +525,48 @@ body {
     background-position: 50% 50%;
     padding-bottom: 30px; }
     body.page-template-tp-front-page .service-panel h2 {
-      font-size: 72px;
       color: #fbca5f;
-      padding-top: 90px;
       font-weight: 400;
       text-align: center;
-      padding-bottom: 60px; }
+      padding: 60px 0px 30px 0px;
+      font-size: 36px; }
+      @media (min-width: 1170px) {
+        body.page-template-tp-front-page .service-panel h2 {
+          padding: 90px 0px 60px 0px; } }
     body.page-template-tp-front-page .service-panel h4 {
-      font-size: 32px;
+      font-size: 24px;
       color: #fbca5f;
       text-align: center;
-      padding-bottom: 30px; }
+      padding-bottom: 15px; }
+      @media (min-width: 1170px) {
+        body.page-template-tp-front-page .service-panel h4 {
+          font-size: 32px;
+          padding-bottom: 30px; } }
   body.page-template-tp-front-page .promo-panel {
     text-align: center;
     color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 30px 0px 60px 0px;
     background-image: url("../images/newsletter-panel-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%; }
+    @media (min-width: 1170px) {
+      body.page-template-tp-front-page .promo-panel {
+        padding: 60px 0px 90px 0px; } }
     body.page-template-tp-front-page .promo-panel .promo-title {
       padding-bottom: 30px; }
       body.page-template-tp-front-page .promo-panel .promo-title h2 {
-        font-size: 72px; }
+        font-size: 36px; }
     body.page-template-tp-front-page .promo-panel .promo-text p {
-      font-size: 22px;
-      font-weight: 300;
-      line-height: 32px;
-      margin-bottom: 30px; }
+      line-height: 24px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      font-weight: 300; }
+      @media (min-width: 1170px) {
+        body.page-template-tp-front-page .promo-panel .promo-text p {
+          line-height: 32px;
+          font-size: 22px;
+          margin-bottom: 30px; } }
     body.page-template-tp-front-page .promo-panel .subscribe {
       max-width: 520px;
       padding: 0;
@@ -618,31 +620,73 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      padding: 100px;
+      padding: 30px;
       bottom: 60px;
       margin-bottom: -75px;
       max-width: 1170px;
       margin-left: auto;
       margin-right: auto; }
+      @media (min-width: 992px) {
+        body.page-template-tp-front-page .contact-us-panel .contact-panel {
+          padding: 60px; } }
+      @media (min-width: 1170px) {
+        body.page-template-tp-front-page .contact-us-panel .contact-panel {
+          padding: 100px; } }
       body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-lamp {
         position: absolute;
         top: 0;
         left: 90px; }
-      body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-lamp {
-        position: absolute;
-        top: 0;
-        right: 90px; }
+        @media (min-width: 768px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-lamp {
+            left: 90px; } }
+        @media (min-width: 992px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-lamp {
+            left: 90px; } }
+        @media (min-width: 1170px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-lamp {
+            left: 90px; } }
       body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-floor-lamp {
         position: absolute;
         bottom: 0;
         left: -120px; }
+        @media (min-width: 768px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-floor-lamp {
+            left: -120px; } }
+        @media (min-width: 992px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-floor-lamp {
+            left: -120px; } }
+        @media (min-width: 1170px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.left-floor-lamp {
+            left: -120px; } }
+      body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-lamp {
+        position: absolute;
+        top: 0;
+        right: 90px; }
+        @media (min-width: 768px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-lamp {
+            right: 90px; } }
+        @media (min-width: 992px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-lamp {
+            right: 90px; } }
+        @media (min-width: 1170px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-lamp {
+            right: 90px; } }
       body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-floor-lamp {
         position: absolute;
         bottom: 0;
         right: -120px; }
+        @media (min-width: 768px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-floor-lamp {
+            right: -120px; } }
+        @media (min-width: 992px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-floor-lamp {
+            right: -120px; } }
+        @media (min-width: 1170px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel img.right-floor-lamp {
+            right: -120px; } }
       body.page-template-tp-front-page .contact-us-panel .contact-panel h3 {
         text-align: center;
-        font-size: 72px;
+        font-size: 36px;
         color: #fbca5f;
         padding-bottom: 30px; }
       body.page-template-tp-front-page .contact-us-panel .contact-panel p {
@@ -651,8 +695,12 @@ body {
         text-align: center;
         max-width: 660px;
         color: #ffffff;
-        font-size: 22px;
-        line-height: 32px; }
+        font-size: 16px;
+        line-height: 24px; }
+        @media (min-width: 1170px) {
+          body.page-template-tp-front-page .contact-us-panel .contact-panel p {
+            font-size: 22px;
+            line-height: 32px; } }
       body.page-template-tp-front-page .contact-us-panel .contact-panel .contact-form {
         margin-top: 30px; }
         body.page-template-tp-front-page .contact-us-panel .contact-panel .contact-form input {
@@ -674,6 +722,19 @@ body {
           body.page-template-tp-front-page .contact-us-panel .contact-panel .contact-form .submit-area button.custom-button-new {
             margin: 0 auto;
             padding: 5px 40px; }
+
+footer {
+  background-color: #000000; }
+  footer p {
+    line-height: 1;
+    font-size: 12px;
+    color: #ffffff !important; }
+  footer a {
+    line-height: 1;
+    font-size: 12px;
+    color: #ffffff !important; }
+    footer a:hover {
+      color: #8455f5; }
 
 a.custom-button {
   padding: 10px 40px;

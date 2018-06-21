@@ -64,8 +64,7 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="image-area"> 
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-homepage-image.jpg" alt="Portrait">
-					<div class="overlay-square"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-homepage-image.png" alt="Portrait">
 				</div>
 				
 			</div>
