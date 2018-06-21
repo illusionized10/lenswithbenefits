@@ -149,14 +149,13 @@ body {
 					margin-top:0px;
 	                position: absolute;
 	                top: 50%;
-	                left: 30px;
+	                left: 120px;
 	                width:60px;
 	                transform: translate(-50%, -50%);
-					float:left;
 					background: transparent !important;
 					transition: all 0.5s ease;
 					&:before {
-						max-width:50px;
+						// max-width:50px;
 						content: url('../images/navigation_previous.png');
 					}
 					&:hover {
@@ -168,14 +167,13 @@ body {
 					margin-top:0px;
 	                position: absolute;
 	                top: 50%;
-	                right: 30px;
+	                right: 90px;
 	                width:60px;
 	                transform: translate(-50%, -50%);
-					float:right;
 					background: transparent !important;
 					transition: all 0.5s ease;
 					&:after {
-						max-width:50px;
+						// max-width:50px;
 						content: url('../images/navigation_next.png'); 
 					}
 					&:hover {
@@ -186,7 +184,7 @@ body {
 
 			.owl-dots {
 				position:absolute;
-				bottom:-60px;
+				bottom:-40px;
 				left:0;
 				width:100%;
 				.owl-dot {
@@ -196,27 +194,27 @@ body {
 						span {
 							border-radius:0px;
 							background: $branding-yellow;
-							height: 20px;
+							height: 10px;
 							text-align: center;
 							transform: rotate(45deg);
-							width:20px;
-						    border-top: 5px solid $branding-purple;
-						    border-left: 5px solid $branding-purple;
-						    border-bottom: 5px solid $branding-purple;
-						    border-right: 5px solid $branding-purple;
+							width:10px;
+						    border-top: 2px solid $branding-purple;
+						    border-left: 2px solid $branding-purple;
+						    border-bottom: 2px solid $branding-purple;
+						    border-right: 2px solid $branding-purple;
 						}
 					}
 					span {
-						border-radius:0px;
+						border-radius: 0px;
 						background: #202020;
-						height: 20px;
+						height: 10px;
 						text-align: center;
 						transform: rotate(45deg);
-						width:20px;
-					    border-top: 5px solid $branding-purple;
-					    border-left: 5px solid $branding-purple;
-					    border-bottom: 5px solid $branding-purple;
-					    border-right: 5px solid $branding-purple;
+						width: 10px;
+						border-top: 2px solid $branding-purple;
+						border-left: 2px solid $branding-purple;
+						border-bottom: 2px solid $branding-purple;
+						border-right: 2px solid $branding-purple;
 					}
 				}
 			}
@@ -255,7 +253,7 @@ body {
                     	right:-40px;
                     	bottom:60px;
                     	width:33.3%;
-                    	border-radius:25px;
+                    	border-radius:10px;
                     	background-color: rgba(0,0,0,0.5);
                     	padding:30px;
                     	.title {
@@ -295,8 +293,10 @@ body {
 			background-size:cover;
 			background-repeat:no-repeat;
 			background-position:50% 50%;
-			padding-top:90px;
-			padding-bottom:60px;
+			padding:60px 0px 30px 0px;
+			@include breakpoint(md) {
+				padding:90px 0px 60px 0px;
+			}
 			.title {
 				color:#ffffff;
 				padding-bottom:30px;
@@ -317,11 +317,14 @@ body {
 				position:relative;
 			}
 			.content-area {
-				padding-top:160px;
+				padding-top:30px;
+				@include breakpoint(md) {
+					padding-top:160px;
+				}
 				h2 {
 					color:#ffffff;
 					padding-bottom:15px;
-					@include font-large();
+					font-size:32px;
 				}
 				p {
 					max-width:500px;
@@ -618,7 +621,8 @@ a.custom-button-new, button.custom-button-new {
     min-width: 150px;
     max-width: 250px;
     display: block;
-    padding: 1em 2em;
+    padding: 0.5em 1.5em;
+    
     font-size:18px;
     text-align:center;
     background: none;
@@ -634,6 +638,9 @@ a.custom-button-new, button.custom-button-new {
 	transition: border-color 0.3s, color 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	@include breakpoint(lg) {
+		padding: 1em 2em;
+	}
 	&::before {
 		content: '';
 		position: absolute;
