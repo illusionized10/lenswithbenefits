@@ -220,23 +220,23 @@ get_header(); ?>
 			<p>We are looking forward to hearing from you! If you have anything specific in mind, feel free to ask us using the form below:</p>
 			<div class="contact-form">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<label>Name: </label>
 						<input type="text">
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<label>Email: </label>
 						<input type="text">
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<label>Phone Number</label>
 						<input type="text">
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-sm-12">
 						<label>Subject</label>
 						<input type="text">
 					</div>
-					<div class="col-12">
+					<div class="col-md-12">
 						<label>How Can We Help?</label>
 						<textarea></textarea>
 					</div>

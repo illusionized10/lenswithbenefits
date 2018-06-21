@@ -5,7 +5,7 @@ $branding-yellow: #fbca5f;
 
 $font-large:36px;
 @include breakpoint(lg){
-	$font-large:72px;
+	$font-large:72px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,4 +64,7 @@ input {
 	padding:15px;
 	margin:0 auto;
 	max-width:1560px;
+	@include breakpoint(lg) {
+		padding:30px;
+	}
 }

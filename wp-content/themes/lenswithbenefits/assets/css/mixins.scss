@@ -45,6 +45,13 @@ $remSize: $size / 18px;
     transition: $args;
 }
 
+@mixin font-large(){
+    font-size:36px;
+    @include breakpoint(lg){
+        font-size:72px;
+    }
+}
+
 .transition {
     @include transition(.25s all ease);
 }

@@ -55,5 +55,8 @@ input {
   padding: 15px;
   margin: 0 auto;
   max-width: 1560px; }
+  @media (min-width: 1170px) {
+    .wrapper {
+      padding: 30px; } }
 
 /*# sourceMappingURL=global.css.map */

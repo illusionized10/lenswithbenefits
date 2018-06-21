@@ -307,7 +307,7 @@ body {
 				}
 				.sub {
 					h2 {
-						font-size:$font-large;
+						@include font-large();
 						padding-left:60px;
 						text-shadow: -3px -4px 0px rgba(124, 102, 55, 1);
 					}
@@ -321,7 +321,7 @@ body {
 				h2 {
 					color:#ffffff;
 					padding-bottom:15px;
-					font-size:$font-large;
+					@include font-large();
 				}
 				p {
 					max-width:500px;
@@ -348,7 +348,7 @@ body {
 				font-weight:400;
 				text-align:center;
 				padding:60px 0px 30px 0px;
-				font-size:$font-large;
+				@include font-large();
 				@include breakpoint(lg){
 					padding:90px 0px 60px 0px;
 				}
@@ -379,7 +379,7 @@ body {
 			.promo-title {
 				padding-bottom:30px;
 				h2 {
-					font-size:$font-large;
+					@include font-large();
 				}
 			}
 			.promo-text {
@@ -437,33 +437,41 @@ body {
 
 		.contact-us-panel {
 			background-color:#d0d0d0;
+			overflow:hidden;
+			.wrapper {
+				padding:0px;
+				@include breakpoint(lg) {
+					padding:15px;
+				}
+			}
 			.contact-panel {
 			    position: relative;
 			    background-image: url(../images/contact-panel-background.jpg);
 			    background-size: cover;
 			    background-repeat: no-repeat;
 			    background-position: 50% 50%;
-			    padding: 30px;
-			    bottom: 60px;
-			    margin-bottom: -75px;
+			    padding: 45px;
 			    max-width: 1170px;
 			    margin-left: auto;
 			    margin-right: auto;
+			    bottom: 0px;
 			    @include breakpoint(md){
 			    	padding: 60px;
 			    }
 			    @include breakpoint(lg){
+			    	margin-bottom: -75px;
+			    	bottom: 60px;
 					padding: 100px;
 			    }
 			    img.left-lamp {
 			    	position:absolute;
 			    	top:0;
-			    	left:90px;
+			    	left:-15px;
 			    	@include breakpoint(sm) {
-						left:90px;
+						left:30px;
 			    	}
 			    	@include breakpoint(md) {
-						left:90px;
+						left:60px;
 			    	}
 			    	@include breakpoint(lg) {
 						left:90px;
@@ -473,10 +481,9 @@ body {
 			    	position:absolute;
 			    	bottom:0;
 			    	left:-120px;
-			    	@include breakpoint(sm) {
-						left:-120px;
-			    	}
+			    	display:none;
 			    	@include breakpoint(md) {
+			    		display:block;
 						left:-120px;
 			    	}
 			    	@include breakpoint(lg) {
@@ -486,12 +493,12 @@ body {
 			    img.right-lamp {
 			    	position:absolute;
 			    	top:0;
-			    	right:90px;
+			    	right:-15px;
 			    	@include breakpoint(sm) {
-						right:90px;
+						right:30px;
 			    	}
 			    	@include breakpoint(md) {
-						right:90px;
+						right:60px;
 			    	}
 			    	@include breakpoint(lg) {
 						right:90px;
@@ -501,10 +508,9 @@ body {
 			    	position:absolute;
 			    	bottom:0;
 			    	right:-120px;
-			    	@include breakpoint(sm) {
-						right:-120px;
-			    	}
+			    	display:none;
 			    	@include breakpoint(md) {
+			    		display:block;
 						right:-120px;
 			    	}
 			    	@include breakpoint(lg) {
@@ -513,7 +519,7 @@ body {
 			    }
 				h3 {
 					text-align:center;
-					font-size:$font-large;
+					@include font-large();
 				    color: #fbca5f;
 					padding-bottom:30px;
 				}
@@ -539,7 +545,6 @@ body {
 					}
 					label {
 						font-size:16px;
-
 						display:block;
 						margin-top:15px;
 						color:#ffffff;
@@ -564,14 +569,27 @@ body {
 }
 
 footer {
+	padding:15px;
 	background-color:#000000;
+	.left {
+		text-align:center;
+		@include breakpoint(md) {
+			text-align:left;
+		}
+	}
+	.right {
+		text-align:center;
+		@include breakpoint(md) {
+			text-align:right;
+		}
+	}
 	p {
-		line-height:1;
+		line-height:16px;
 		font-size:12px;
 		color:#ffffff !important;
 	}
 	a {
-		line-height:1;
+		line-height:16px;
 		font-size:12px;
 		color:#ffffff !important;
 		&:hover {
