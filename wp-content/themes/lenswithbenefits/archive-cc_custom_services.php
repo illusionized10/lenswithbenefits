@@ -117,9 +117,9 @@ $customServices = get_posts( $serviceArgs );
 				</div>
 				<div class="section__more">
 					<div class="section__more-inner section__more-inner--bg1">
-						<span class="section__more-text">Book your photoshoot today!</span>
+						<span class="section__more-text">Let's take some photo's together! </span>
 						<a href="#" class="section__more-link">
-							<span class="section__more-linktext">Say Hello</span>
+							<span class="section__more-linktext">Book today, give us a shout</span>
 							<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
 						</a>
 					</div>
