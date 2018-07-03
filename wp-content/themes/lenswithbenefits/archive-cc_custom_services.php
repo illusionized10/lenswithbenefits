@@ -20,6 +20,11 @@ $serviceArgs = array(
 );
 
 $customServices = get_posts( $serviceArgs );
+$numberOfServices = count($customServices);
+
+// Going to need to loop through the services and output them individually
+
+
 ?>
 
 <svg class="hidden">
@@ -88,7 +93,7 @@ $customServices = get_posts( $serviceArgs );
 			<span class="sections__index-current">
 				<span class="sections__index-inner">01</span>
 			</span>
-			<span class="sections__index-total">04</span>
+			<span class="sections__index-total">0<?php echo $numberOfServices; ?></span>
 		</div>
 		<!-- navigation down -->
 		<nav class="sections__nav">
@@ -109,8 +114,58 @@ $customServices = get_posts( $serviceArgs );
 			<!-- sections -->
 			<section class="section section--current">
 				<div class="section__content">
-					<h2 class="section__title">Hiking</h2>
-					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
+					<h2 class="section__title"><?php echo get_the_title($service->ID); ?></h2>
+					<p class="section__description"><span class="section__description-inner"><?php echo get_field('cc_service_description', $service->ID); ?></span></p>
+				</div>
+				<div class="section__img">
+					<div class="section__img-inner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg)"></div>
+				</div>
+				<div class="section__more">
+					<div class="section__more-inner section__more-inner--bg1">
+						<span class="section__more-text">Let's take some photo's together! </span>
+						<a href="#" class="section__more-link">
+							<span class="section__more-linktext">Book today, give us a shout</span>
+							<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+						</a>
+					</div>
+				</div>
+				<div class="section__expander"></div>
+				<ul class="section__facts">
+					<li class="section__facts-item">
+						<h3 class="section__facts-title">Insert Text Here</h3>
+						<span class="section__facts-detail">Lorem ipsum dolor sit amet, cons</span>
+					</li>
+					<li class="section__facts-item">
+						<h3 class="section__facts-title">Insert Text Here</h3>
+						<span class="section__facts-detail">Lorem ipsum dolor sit amet, cons</span>
+					</li>
+<!-- 					<li class="section__facts-item">
+						<h3 class="section__facts-title">Service Title Here - Photo Gallery</h3>
+						<span class="section__facts-detail">Click to see a collection of images</span>
+					</li> -->
+					<li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
+						<div class="section__facts-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/>
+							<svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>
+						</div>
+					</li>
+				</ul>
+				<div class="section__gallery" id="gallery<?php echo $sectionCounter; ?>">
+					<h3 class="section__gallery-item section__gallery-item--title">Photo Gallery</h3>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/></a>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb2.jpg" alt="Some image"/></a>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb3.jpg" alt="Some image"/></a>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb4.jpg" alt="Some image"/></a>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb5.jpg" alt="Some image"/></a>
+					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb6.jpg" alt="Some image"/></a>
+				</div>
+			</section><!--/ section -->
+			<?php } else { ?>
+			<!-- sections -->
+			<section class="section">
+				<div class="section__content">
+					<h2 class="section__title"><?php echo get_the_title($service->ID); ?></h2>
+					<p class="section__description"><span class="section__description-inner"><?php echo get_field('cc_service_description', $service->ID); ?></span></p>
 				</div>
 				<div class="section__img">
 					<div class="section__img-inner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg)"></div>
@@ -146,57 +201,7 @@ $customServices = get_posts( $serviceArgs );
 					</li>
 				</ul>
 				<div class="section__gallery" id="gallery<?php echo $sectionCounter; ?>">
-					<h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/></a>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb2.jpg" alt="Some image"/></a>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb3.jpg" alt="Some image"/></a>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb4.jpg" alt="Some image"/></a>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb5.jpg" alt="Some image"/></a>
-					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb6.jpg" alt="Some image"/></a>
-				</div>
-			</section><!--/ section -->
-			<?php } else { ?>
-			<!-- sections -->
-			<section class="section">
-				<div class="section__content">
-					<h2 class="section__title">Hiking</h2>
-					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
-				</div>
-				<div class="section__img">
-					<div class="section__img-inner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg)"></div>
-				</div>
-				<div class="section__more">
-					<div class="section__more-inner section__more-inner--bg1">
-						<span class="section__more-text">Want to know more?</span>
-						<a href="#" class="section__more-link">
-							<span class="section__more-linktext">Explore all hikes</span>
-							<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
-						</a>
-					</div>
-				</div>
-				<div class="section__expander"></div>
-				<ul class="section__facts">
-					<li class="section__facts-item">
-						<h3 class="section__facts-title">Insert Text Here</h3>
-						<span class="section__facts-detail">Lorem ipsum dolor sit amet, cons</span>
-					</li>
-					<li class="section__facts-item">
-						<h3 class="section__facts-title">Insert Text Here</h3>
-						<span class="section__facts-detail">Lorem ipsum dolor sit amet, cons</span>
-					</li>
-					<li class="section__facts-item">
-						<h3 class="section__facts-title">Service Title Here - Photo Gallery</h3>
-						<span class="section__facts-detail">Click to see a collection of images</span>
-					</li>
-					<li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
-						<div class="section__facts-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/>
-							<svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>
-						</div>
-					</li>
-				</ul>
-				<div class="section__gallery" id="gallery<?php echo $sectionCounter; ?>">
-					<h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>
+					<h3 class="section__gallery-item section__gallery-item--title">Photo Gallery</h3>
 					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/></a>
 					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb2.jpg" alt="Some image"/></a>
 					<a class="section__gallery-item" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb3.jpg" alt="Some image"/></a>
@@ -210,6 +215,7 @@ $customServices = get_posts( $serviceArgs );
 		<?php } ?>
 	</div><!--/ sections -->
 </main>
+
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/imagesloaded.pkgd.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/charming.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/anime.min.js"></script>
