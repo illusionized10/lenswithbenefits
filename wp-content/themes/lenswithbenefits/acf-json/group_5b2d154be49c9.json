@@ -3,6 +3,25 @@
     "title": "Custom Services Fields",
     "fields": [
         {
+            "key": "field_5b36ab77137ff",
+            "label": "Service Description",
+            "name": "cc_service_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_5b2d165bde05e",
             "label": "Photo Gallery",
             "name": "cc_photo_gallery",
@@ -39,7 +58,7 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -47,5 +66,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529681584
+    "modified": 1530309530
 }
