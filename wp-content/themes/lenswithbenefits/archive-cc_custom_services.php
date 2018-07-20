@@ -109,7 +109,7 @@ $customServices = get_posts( $serviceArgs );
 			<!-- sections -->
 			<section class="section section--current">
 				<div class="section__content">
-					<h2 class="section__title">Hiking</h2>
+					<h2 class="section__title"><?php echo $service->post_title; ?></h2>
 					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
 				</div>
 				<div class="section__img">
@@ -159,7 +159,7 @@ $customServices = get_posts( $serviceArgs );
 			<!-- sections -->
 			<section class="section">
 				<div class="section__content">
-					<h2 class="section__title">Hiking</h2>
+					<h2 class="section__title"><?php echo $service->post_title; ?></h2>
 					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
 				</div>
 				<div class="section__img">
@@ -167,9 +167,9 @@ $customServices = get_posts( $serviceArgs );
 				</div>
 				<div class="section__more">
 					<div class="section__more-inner section__more-inner--bg1">
-						<span class="section__more-text">Want to know more?</span>
+						<span class="section__more-text">Let's take some photo's together! </span>
 						<a href="#" class="section__more-link">
-							<span class="section__more-linktext">Explore all hikes</span>
+							<span class="section__more-linktext">Book today, give us a shout</span>
 							<svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
 						</a>
 					</div>
