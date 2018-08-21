@@ -44,7 +44,7 @@ get_header(); ?>
 				</div>
 			<?php }  //endif ?> 
 
-		<?php } //end foreach?>
+		<?php } //end foreach ?>
 
 	</div>
 </div>

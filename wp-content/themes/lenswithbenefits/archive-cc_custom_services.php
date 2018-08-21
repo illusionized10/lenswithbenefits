@@ -114,13 +114,8 @@ $numberOfServices = count($customServices);
 			<!-- sections -->
 			<section class="section section--current">
 				<div class="section__content">
-<<<<<<< HEAD
-					<h2 class="section__title"><?php echo $service->post_title; ?></h2>
-					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
-=======
 					<h2 class="section__title"><?php echo get_the_title($service->ID); ?></h2>
 					<p class="section__description"><span class="section__description-inner"><?php echo get_field('cc_service_description', $service->ID); ?></span></p>
->>>>>>> 576add98d6c6587786bc7db072f7bf1e1d33abbe
 				</div>
 				<div class="section__img">
 					<div class="section__img-inner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg)"></div>
@@ -144,10 +139,12 @@ $numberOfServices = count($customServices);
 						<h3 class="section__facts-title">Insert Text Here</h3>
 						<span class="section__facts-detail">Lorem ipsum dolor sit amet, cons</span>
 					</li>
-<!-- 					<li class="section__facts-item">
-						<h3 class="section__facts-title">Service Title Here - Photo Gallery</h3>
-						<span class="section__facts-detail">Click to see a collection of images</span>
-					</li> -->
+					<!--
+	 					<li class="section__facts-item">
+							<h3 class="section__facts-title">Service Title Here - Photo Gallery</h3>
+							<span class="section__facts-detail">Click to see a collection of images</span>
+						</li>
+					-->
 					<li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
 						<div class="section__facts-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb1.jpg" alt="Some image"/>
@@ -169,13 +166,8 @@ $numberOfServices = count($customServices);
 			<!-- sections -->
 			<section class="section">
 				<div class="section__content">
-<<<<<<< HEAD
-					<h2 class="section__title"><?php echo $service->post_title; ?></h2>
-					<p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
-=======
 					<h2 class="section__title"><?php echo get_the_title($service->ID); ?></h2>
 					<p class="section__description"><span class="section__description-inner"><?php echo get_field('cc_service_description', $service->ID); ?></span></p>
->>>>>>> 576add98d6c6587786bc7db072f7bf1e1d33abbe
 				</div>
 				<div class="section__img">
 					<div class="section__img-inner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/1.jpg)"></div>
